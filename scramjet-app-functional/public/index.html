@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Scramjet</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="/scram/scramjet.all.js"></script>
+  <script src="/baremux/index.js"></script>
+  <script src="register-sw.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <main id="home">
+    <div class="badge">MERCURY WORKSHOP · SCRAMJET</div>
+    <h1>Browse <span>freely.</span></h1>
+    <p class="subtitle">A Scramjet-App based browser sandbox. Enter a URL or search the web.</p>
+    <form id="sj-form" autocomplete="off">
+      <input id="sj-search-engine" value="https://www.google.com/search?q=%s" type="hidden">
+      <div class="searchbox">
+        <span>⌕</span>
+        <input id="sj-address" type="text" placeholder="Search or enter a URL" autofocus>
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    <p id="sj-error"></p><pre id="sj-error-code"></pre>
+    <div class="links">
+      <a href="https://github.com/MercuryWorkshop/Scramjet">Scramjet</a>
+      <a href="https://github.com/MercuryWorkshop/Scramjet-App">Scramjet-App</a>
+      <a href="https://github.com/MercuryWorkshop">Mercury Workshop</a>
+    </div>
+  </main>
+  <footer>Powered by Scramjet · Use responsibly and follow the rules of the networks and services you access.</footer>
+</body>
+</html>
